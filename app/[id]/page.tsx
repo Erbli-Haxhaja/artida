@@ -6,10 +6,10 @@ const PDFViewer = dynamic(() => import("../PDFViewer"), { ssr: false });
 
 export default function CertificatePage() {
   return (
-    <div className="min-h-screen bg-[#e8e8e8]">
+    <div className="min-h-screen bg-[#e8e8e8] overflow-x-hidden">
       {/* ===== NAVBAR ===== */}
       <nav className="bg-[rgb(32,10,86)] h-[70px] flex items-center justify-center">
-        <div className="w-full max-w-[1200px] flex items-center justify-between px-12">
+        <div className="w-full max-w-[1200px] flex items-center justify-between" style={{ paddingLeft: 'max(20px, 5vw)', paddingRight: 'max(20px, 5vw)' }}>
           <div className="flex items-center gap-[10px]">
             {/* 4 dots in 2x2 grid */}
             <div className="grid grid-cols-2 gap-[5px]">
